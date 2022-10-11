@@ -196,7 +196,7 @@
             </a>
         </div>
     </div>
-    <iframe style="width:100%;" class="m-newspaper" id="m-newspaper" src="https://newspaper.honest-family.com/answers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0"></iframe>
+    <iframe style="width:100%;" class="m-newspaper" id="m-newspaper" src="http://localhost/answers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0"></iframe>
 
     <footer style="width:100%; height:600px; background-color:black;"></footer>
 </div>
