@@ -20,12 +20,6 @@ class User extends Authenticatable
 
     protected $fillable = [
         'id',
-        "unique_id",
-        'name',
-        'level',
-        "point",
-        "template_id",
-
         'password',
         "verified_at",
     ];
