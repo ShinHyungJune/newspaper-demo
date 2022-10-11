@@ -1,8 +1,6 @@
 <template>
     <div>
         <slot />
-
-        <flash />
     </div>
 
 </template>
