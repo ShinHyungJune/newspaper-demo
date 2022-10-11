@@ -37,7 +37,7 @@ Route::get("/mailable", function(){
 Route::get("/pointHistories", [\App\Http\Controllers\PointHistoryController::class, "index"]);
 
 Route::middleware("auth")->group(function(){
-    Route::patch("/users/template", [UserController::class, "updateTemplate"]);
+    /*Route::patch("/users/template", [UserController::class, "updateTemplate"]);
     Route::post("/readHistories", [\App\Http\Controllers\ReadHistoryController::class, "store"]);
 
     Route::post("/newspapers", [\App\Http\Controllers\NewspaperController::class, "store"]);
@@ -53,10 +53,10 @@ Route::middleware("auth")->group(function(){
 
     Route::get("/questions", [\App\Http\Controllers\QuestionController::class, "index"]);
 
-    Route::get("/readHistories", [\App\Http\Controllers\ReadHistoryController::class, "index"]);
+    Route::get("/readHistories", [\App\Http\Controllers\ReadHistoryController::class, "index"]);*/
 });
-Route::get("/curations/{curation}", [\App\Http\Controllers\CurationController::class, "show"]);
-Route::get("/answers/create", [\App\Http\Controllers\AnswerController::class, "create"]);
+/*Route::get("/curations/{curation}", [\App\Http\Controllers\CurationController::class, "show"]);
+Route::get("/answers/create", [\App\Http\Controllers\AnswerController::class, "create"]);*/
 
 
 Route::middleware("guest")->group(function(){
