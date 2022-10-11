@@ -18,14 +18,6 @@ class UserResource extends JsonResource
     {
         return [
             "id" => $this->id,
-            "unique_id" => $this->unique_id,
-            "name" => $this->name,
-            "point" => $this->point,
-            "level" => $this->level,
-            "template" => $this->template ? TemplateResource::make($this->template) : "",
-
-            "created_at" => Carbon::make($this->created_at)->format("Y-m-d H:i"),
-            "updated_at" => Carbon::make($this->updated_at)->format("Y-m-d H:i")
         ];
     }
 }
