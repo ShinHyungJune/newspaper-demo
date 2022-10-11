@@ -23,6 +23,11 @@ Route::get("/test2", function(){
 });
 
 
+Route::get("/curations", function(){
+    return view("curations");
+});
+
+
 Route::middleware("auth")->group(function(){
 });
 

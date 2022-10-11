@@ -9,23 +9,39 @@ let form = {
 }
 
 $(document).ready(function(){
-    let contents = $(".art_body .content_text");
-
-    form.title = $("#article_title").text();
-    form.description = "";
-
-    contents.each(function(index, item){
-        form.description = form.description + " " + $(item).text();
+    // 큐레이션 저장 팝업 노출
+    $(".m-btn-curation").click(function(){
+        $(".m-pop-curation").show();
     });
 
-    form.category = $(".fx_topbar .gnb li a").attr("title");
-    form.count_text = form.description.length;
-    form.url = window.location.href;
-    form.img_url = $(".art_photo_wrap img").attr("src");
+    // 기사완독처리 데이터 준비
+    let contents = $(".art_body .content_text");
 
+    if(contents.length){
+        form.title = $("#article_title").text();
+        form.description = "";
+
+        contents.each(function(index, item){
+            form.description = form.description + " " + $(item).text();
+        });
+
+        form.category = $(".fx_topbar .gnb li a").attr("title");
+        form.count_text = form.description.length;
+        form.url = window.location.href;
+        form.img_url = $(".art_photo_wrap img").attr("src");
+    }
 });
 
+function storeCuration(curationForm){
+    axios.post("https://newspaper.honest-family.com/api/newspapers", {
+        ...form,
+        ...curationForm
+    }).then(response => {
+        alert(response.data.message);
 
+        $(".m-pop-curation").hide();
+    });
+}
 
 function intersect(khan_id){
     form.khan_id = khan_id;
@@ -39,7 +55,7 @@ function intersect(khan_id){
     let io = new IntersectionObserver((entries, observer) => {
         entries.forEach((entry) => {
             if(entry.isIntersecting){
-                axios.post("http://localhost/api/readHistories", form)
+                axios.post("https://newspaper.honest-family.com/api/readHistories", form)
                     .then(response => {
                         alert(response.data.message);
                     });

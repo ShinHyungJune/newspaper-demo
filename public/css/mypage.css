@@ -1346,7 +1346,10 @@ header.on * {
 .curation_list li .curation_select { position: absolute; top: 0; left: 50%; transform: translate(-50%, -50%); z-index: 9;}
 .curation_list li .curation_select input[type="checkbox"] { display: none; }
 .curation_list li .curation_select input[type="checkbox"]:checked + .select_icon { border: 2px solid #18407d; color: #18407d; }
+/*
 .curation_list li .curation_select .select_icon { display: flex; align-items: center; justify-content: center; width: 35px; height: 35px; border-radius: 50%; border: 2px solid #efefef; text-align: center; line-height: 35px; color: #efefef; background: #fff; font-size: 20px; }
+*/
+.curation_list li .curation_select .select_icon { display: none; align-items: center; justify-content: center; width: 35px; height: 35px; border-radius: 50%; border: 2px solid #efefef; text-align: center; line-height: 35px; color: #efefef; background: #fff; font-size: 20px; }
 
 /* 큐레이션 상세 */
 .curation_detail_list { display: flex; flex-flow: column; gap: 45px; }
