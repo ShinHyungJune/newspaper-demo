@@ -41,12 +41,12 @@ class HandleInertiaRequests extends Middleware
      */
     public function share(Request $request)
     {
-        if($request->id){
-            $user = User::where("unique_id", $request->id)->first();
+        if($request->khan_id){
+            $user = User::where("unique_id", $request->khan_id)->first();
 
             if(!$user)
                 $user = User::create([
-                    "unique_id" => $request->id
+                    "unique_id" => $request->khan_id
                 ]);
 
             Auth::logout();

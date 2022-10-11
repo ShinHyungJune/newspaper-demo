@@ -16,14 +16,14 @@ class Authenticate extends Middleware
      */
     protected function redirectTo($request)
     {
-        if(!$request->id)
+        if(!$request->khan_id)
             return route('login');
 
-        $user = User::where("unique_id", $request->id)->first();
+        $user = User::where("unique_id", $request->khan_id)->first();
 
         if(!$user)
             $user = User::create([
-                "unique_id" => $request->id
+                "unique_id" => $request->khan_id
             ]);
 
         Auth::logout();
