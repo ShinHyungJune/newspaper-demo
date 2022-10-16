@@ -5,11 +5,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title></title>
-    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="/css/newspaper.css">
     <script src="/js/jquery.js"></script>
 </head>
@@ -23,8 +18,6 @@
 </style>
 <body>
 <div>
-
-
     <!-- 테스트 기사영역 -->
     <div class="example">
         <div class="fx_topbar">
@@ -213,10 +206,10 @@
     </button>
 
     <!-- 테스트 퀴즈 영역 -->
-    <iframe style="width:100%;" class="m-newspaper" id="m-newspaper" src="https://newspaper.honest-family.com/answers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0"></iframe>
+    <iframe style="width:100%;" class="m-newspaper" id="m-newspaper" src="https://newspaper.honest-family.com/answers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0" sandbox=""></iframe>
 
     <!-- 큐레이션 팝업창 -->
-    <iframe style="width:100%;" class="m-pop-curation" id="m-newspaper" src="https://newspaper.honest-family.com/newspapers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0"></iframe>
+    <iframe style="width:100%;" class="m-pop-curation" id="m-newspaper" src="https://newspaper.honest-family.com/newspapers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0" sandbox=""></iframe>
 
 </div>
 
@@ -250,8 +243,6 @@
     setTimeout(function(){
         intersect("Z66W52d1gdL6I1K%2BVjSTBA%3D%3D"); // url encode된 khan_id 전달 필요
     }, 500)
-
-    // 큐레이션
 </script>
 </body>
 </html>
