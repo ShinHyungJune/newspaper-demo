@@ -206,10 +206,10 @@
     </button>
 
     <!-- 테스트 퀴즈 영역 -->
-    <iframe style="width:100%;" class="m-newspaper" id="m-newspaper" src="https://newspaper.honest-family.com/answers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0" sandbox=""></iframe>
+    <iframe style="width:100%;" class="m-newspaper" id="m-newspaper" src="https://newspaper.honest-family.com/answers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0" ></iframe>
 
     <!-- 큐레이션 팝업창 -->
-    <iframe style="width:100%;" class="m-pop-curation" id="m-newspaper" src="https://newspaper.honest-family.com/newspapers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0" sandbox=""></iframe>
+    <iframe style="width:100%;" class="m-pop-curation" id="m-newspaper" src="https://newspaper.honest-family.com/newspapers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0" ></iframe>
 
 </div>
 
