@@ -57,7 +57,8 @@ function intersect(khan_id){
             if(entry.isIntersecting){
                 axios.post("https://newspaper.honest-family.com/api/readHistories", form)
                     .then(response => {
-                        alert(response.data.message);
+                        if(response.data.message)
+                            alert(response.data.message);
                     });
             }
         });
