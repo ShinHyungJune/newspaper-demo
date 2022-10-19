@@ -18,6 +18,11 @@
 </style>
 <body>
 <div>
+    <!-- 큐레이션 팝업창 -->
+    <iframe style="width:100%;" class="m-pop-curation" id="m-newspaper"
+            src="http://localhost/newspapers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D&url=http://localhost:90" frameborder="0"
+    ></iframe>
+
     <!-- 테스트 기사영역 -->
     <div class="example">
         <div class="fx_topbar">
@@ -201,15 +206,9 @@
         <footer style="width:100%; height:600px; background-color:black;"></footer>
     </div>
 
-    <button class="m-btn-curation">
-        큐레이션 저장 테스트
-    </button>
-
     <!-- 테스트 퀴즈 영역 -->
     <iframe style="width:100%;" class="m-newspaper" id="m-newspaper" src="http://localhost/answers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0" ></iframe>
 
-    <!-- 큐레이션 팝업창 -->
-    <iframe style="width:100%;" class="m-pop-curation" id="m-newspaper" src="http://localhost/newspapers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0" ></iframe>
 
 </div>
 
@@ -217,28 +216,6 @@
 <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
 <script src="/js/newspaper.js"></script>
 <script>
-    window.addEventListener('message', function(e) {
-        // iframe 높이 자동조절
-        if(e.data.height){
-            document.getElementById('m-newspaper').height= e.data.height;
-
-            document.getElementById('m-newspaper').style.overflow = "hidden";
-        }
-
-        // 큐레이션 저장요청
-        if(e.data.curationForm){
-            storeCuration(e.data.curationForm);
-        }
-
-        // 닫기요청
-        if(e.data.close)
-            $(e.data.close).hide();
-
-        // URL 이동 요청
-        if(e.data.url)
-            window.location.href = e.data.url;
-    });
-
     // 기사 완독처리
     setTimeout(function(){
         intersect("Z66W52d1gdL6I1K%2BVjSTBA%3D%3D"); // url encode된 khan_id 전달 필요

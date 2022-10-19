@@ -4657,8 +4657,6 @@ __webpack_require__.r(__webpack_exports__);
 //
 //
 //
-//
-//
 
 
 
@@ -5247,7 +5245,6 @@ if (!__webpack_require__.g._babelPolyfill && !window._babelPolyfill) {
 
 
 
-window.dayOfWeeks = ["일", "월", "화", "수", "목", "금", "토"];
 (0,_inertiajs_inertia_vue__WEBPACK_IMPORTED_MODULE_0__.createInertiaApp)({
   resolve: function resolve(name) {
     var page = __webpack_require__("./resources/js/Pages sync recursive ^\\.\\/.*$")("./".concat(name))["default"];
@@ -45507,7 +45504,7 @@ var render = function () {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c("div", [_vm._t("default"), _vm._v(" "), _c("flash")], 2)
+  return _c("div", [_vm._t("default")], 2)
 }
 var staticRenderFns = []
 render._withStripped = true
