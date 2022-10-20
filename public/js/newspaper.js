@@ -49,7 +49,7 @@ window.addEventListener('message', function(e) {
 
     // 닫기요청
     if(e.data.close)
-        $(e.data.close).hide();
+        $(e.data.close).removeClass("active");
 
     // URL 이동 요청
     if(e.data.url)
@@ -66,9 +66,9 @@ function storeCuration(curationForm){
         ...curationForm
     }).then(response => {
         alert(response.data.message);
-
-        $(".m-pop-curation").removeClass("active");
     });
+
+    $(".m-pop-curation").removeClass("active");
 }
 
 function intersect(khan_id){
