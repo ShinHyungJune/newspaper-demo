@@ -27,7 +27,7 @@ $(document).ready(function(){
             form.description = form.description + " " + $(item).text();
         });
 
-        form.category = $(".fx_topbar .gnb li a").attr("title");
+        form.category = $( 'meta[property="article:sec_id"]' ).attr( 'content' );
         form.count_text = form.description.length;
         form.url = window.location.href;
         form.img_url = $(".art_photo_wrap img").attr("src");

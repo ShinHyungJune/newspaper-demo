@@ -7,6 +7,9 @@
     <title></title>
     <link rel="stylesheet" type="text/css" href="/css/newspaper.css">
     <script src="/js/jquery.js"></script>
+    <meta property="article:sec_id" content="920100" />
+    <meta property="article:section" content="경제" />
+    <meta property="article:section2" content="경제 일반" />
 </head>
 <style>
     * {font-size:28px !important;}
