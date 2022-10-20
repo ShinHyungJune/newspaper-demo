@@ -34,7 +34,7 @@
                                         <a href="#" @click.prevent="activeSharePop = true;" :style="`color:${usingTemplate.color}; background-color:${usingTemplate.background_color}`">
                                             공유하기 <i class="xi-upload"></i>
                                         </a>
-                                        <share v-if="activeSharePop" path="/123" @close="activeSharePop = false"/>
+                                        <share v-if="activeSharePop" :path="`/mypage/more/my_curation.html?curation_id=${curation.id}`" @close="activeSharePop = false"/>
                                     </li>
                                 </ul>
                             </div>

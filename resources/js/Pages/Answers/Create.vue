@@ -144,7 +144,7 @@
                                             <div class="btn_wrap">
                                                 <a href="#" @click.prevent="activeSharePop = true" class="box-socials-wrap">
                                                     공유하기
-                                                    <share :path="`/answers/create?activeIndex=${form.activeIndex}`" v-if="activeSharePop" @close="activeSharePop = false"></share>
+                                                    <share :path="`/section_test.html?type=todayQuiz`" v-if="activeSharePop" @close="activeSharePop = false"></share>
                                                 </a>
                                                 <a href="#" class="next" @click.prevent="next">다음 문제</a>
                                             </div>
