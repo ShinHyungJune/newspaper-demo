@@ -20,7 +20,7 @@
 <div>
     <!-- 큐레이션 팝업창 -->
     <iframe style="width:100%;" class="m-pop-curation" id="m-newspaper"
-            src="http://localhost/newspapers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D&url=http://localhost:90" frameborder="0"
+            src="https://newspaper.honest-family.com/newspapers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D&url=https://newspaper.honest-family.com:90" frameborder="0"
     ></iframe>
 
     <!-- 테스트 기사영역 -->
@@ -207,7 +207,7 @@
     </div>
 
     <!-- 테스트 퀴즈 영역 -->
-    <iframe style="width:100%;" class="m-newspaper" id="m-newspaper" src="http://localhost/answers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0" ></iframe>
+    <iframe style="width:100%;" class="m-newspaper" id="m-newspaper" src="https://newspaper.honest-family.com/answers/create?khan_id=Z66W52d1gdL6I1K%2BVjSTBA%3D%3D" frameborder="0" ></iframe>
 
 
 </div>

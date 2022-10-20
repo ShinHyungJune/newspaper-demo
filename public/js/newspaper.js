@@ -61,7 +61,7 @@ window.addEventListener('message', function(e) {
 });
 
 function storeCuration(curationForm){
-    axios.post("http://locahost/api/newspapers", {
+    axios.post("https://newspaper.honest-family.com/api/newspapers", {
         ...form,
         ...curationForm
     }).then(response => {
