@@ -6,3 +6,7 @@
     position: fixed; top:0; left:0;
     z-index:10000000;
 }
+
+.art_header {
+    z-index:100;
+}
